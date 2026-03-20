@@ -3,7 +3,7 @@ name = "martial-arts-dynamics-mcp"
 version = "0.1.0"
 description = "Martial arts dynamics as compositional vocabulary for image generation - maps judo and jiu jitsu geometry to 5D aesthetic parameter space"
 requires-python = ">=3.10"
-dependencies = ["lumpy"]
+dependencies = ["numpy"]
 
 [build-system]
 requires = ["hatchling"]
