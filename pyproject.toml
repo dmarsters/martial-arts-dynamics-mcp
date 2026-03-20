@@ -1,0 +1,19 @@
+[project]
+name = "martial-arts-dynamics-mcp"
+version = "0.1.0"
+description = "Martial arts dynamics as compositional vocabulary for image generation - maps judo and jiu jitsu geometry to 5D aesthetic parameter space"
+requires-python = ">=3.10"
+dependencies = ["lumpy"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[project.scripts]
+martial-arts-dynamics-mcp = "martial_arts_dynamics_mcp:mcp.run"
+
+[tool.fastmcp]
+entrypoint = "martial_arts_dynamics_mcp.py:mcp"
